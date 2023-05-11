@@ -1,19 +1,12 @@
 <script>
 import Header from './Header.vue'
 export default {
-    name: 'Home',
+    name: 'Update',
     components:{
         Header,
     },
-    data() {
-        return {
-            name: '',
-
-        }
-    },
     mounted() {
         let user = localStorage.getItem('user-info');
-        this.name = JSON.parse(user).name;
         if(!user){
             this.$router.push({name:'SignUp'})
         }
@@ -26,7 +19,7 @@ export default {
         <Header></Header>
     </div>
     <div>
-        <h1 class="text-center">Ciao {{name}}. Homepage</h1>
+        <h1 class="text-center">Update Restaurant</h1>
     </div>
 </template>
 

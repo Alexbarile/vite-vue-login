@@ -19,13 +19,13 @@ export default {
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                    <router-link to="/" class="nav-link" aria-current="page">Home</router-link>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Add Restaurant</a>
+                    <router-link to="/add" class="nav-link">Add Restaurant</router-link>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Update Restaurant</a>
+                    <router-link to="/update" class="nav-link">Update Restaurant</router-link>
                 </li>
                 <li class="nav-item">
                     <a v-on:click="logout" class="nav-link" href="#">Logout</a>
